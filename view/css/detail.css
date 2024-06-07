@@ -1,0 +1,113 @@
+#content {
+    background-color: #383838;
+}
+
+#left-content, #right-content {
+    background-color: #1c1c1c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.attr {
+    font-weight: bold;
+    color: #5282e2;
+}
+
+#infomation,
+#description,
+#trailer {
+    color: #fffff3;
+    background-color: #222222;
+}
+
+#comments {
+    background-color: #e9e9e9;
+}
+
+.comment {
+    background-color: #f3f3f3;
+}
+
+.user-name {
+    color: #385898;
+    font-weight: bold;
+}
+
+.item-film {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #222222;
+}
+
+.rating {
+    color: #e5bc6e;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.title-1 {
+    color: #fffff3;
+    font-weight: bold;
+}
+
+.title-2 {
+    color: #ff9601;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
